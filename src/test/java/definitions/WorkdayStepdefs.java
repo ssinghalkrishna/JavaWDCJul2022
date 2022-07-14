@@ -24,6 +24,9 @@ public class WorkdayStepdefs {
         if (page.equalsIgnoreCase("workday")) {
             getDriver().get("https://workday.wd5.myworkdayjobs.com/Workday");
         }
+        else if (page.equalsIgnoreCase("calculator")) {
+            getDriver().get("https://www.calculator.net/");
+        }
     }
 
     @When("^I select any position$")
