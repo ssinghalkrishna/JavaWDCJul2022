@@ -2,7 +2,7 @@
 Feature: Converter functions
 
   Background:
-    Given I go to "converter" page
+    Given I go to "converter" page (upload)
 
   @converter1
   Scenario: Validate Fahrenheit to Celsius

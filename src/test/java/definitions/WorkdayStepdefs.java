@@ -27,6 +27,12 @@ public class WorkdayStepdefs {
         else if (page.equalsIgnoreCase("calculator")) {
             getDriver().get("https://www.calculator.net/");
         }
+        else if (page.equalsIgnoreCase("converter")) {
+            getDriver().get("https://www.unitconverters.net/");
+        }
+        else {
+            throw new Exception("Page not recognized: " + page);
+        }
     }
 
     @When("^I select any position$")
