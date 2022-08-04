@@ -30,6 +30,12 @@ public class WorkdayStepdefs {
         else if (page.equalsIgnoreCase("converter")) {
             getDriver().get("https://www.unitconverters.net/");
         }
+        else if (page.equalsIgnoreCase("ups_global")) {
+            getDriver().get("https://www.ups.com/us/en/global.page");
+        }
+        else if (page.equalsIgnoreCase("ups")) {
+            getDriver().get("https://www.ups.com/us/en/Home.page");
+        }
         else {
             throw new Exception("Page not recognized: " + page);
         }

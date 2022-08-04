@@ -6,6 +6,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -23,6 +24,10 @@ public class USPSStepdefs {
         if (page.equalsIgnoreCase("usps")) {
             getDriver().get("https://www.usps.com/");
             getDriver().manage().window().maximize();
+        }
+        else if (page.equalsIgnoreCase("ups")) {
+            getDriver().get("https://www.ups.com/us/en/Home.page");
+            getDriver().manage().window().setSize(new Dimension(1400, 768));
         }
     }
 
